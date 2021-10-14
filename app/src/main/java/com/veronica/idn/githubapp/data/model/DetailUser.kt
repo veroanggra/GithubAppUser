@@ -1,4 +1,4 @@
-package com.veronica.idn.githubapp.model
+package com.veronica.idn.githubapp.data.model
 
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
