@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginBottom="4dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cvItemUser"
+        android:layout_width="@dimen/_50dp"
+        android:layout_height="@dimen/_50dp"
+        android:layout_marginStart="@dimen/_30dp"
+        android:contentDescription="@string/image_user"
+        app:layout_constraintBottom_toTopOf="@id/viewItemUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvNameItemUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/txt_name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/cvItemUser"
+        app:layout_constraintTop_toTopOf="@+id/cvItemUser" />
+
+    <TextView
+        android:id="@+id/tvUsernameItemUser"
+        style="@style/TextStyleLight"
+        android:layout_marginStart="8dp"
+        android:text="@string/txt_username"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNameItemUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.036"
+        app:layout_constraintStart_toEndOf="@+id/tvNameItemUser"
+        app:layout_constraintTop_toTopOf="@+id/tvNameItemUser"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <TextView
+        android:id="@+id/tvCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/txt_company"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cvItemUser"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameItemUser" />
+
+    <TextView
+        android:id="@+id/tvLocationItemUser"
+        style="@style/TextStyleLight"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/txt_location"
+        app:layout_constraintBottom_toTopOf="@id/viewItemUser"
+        app:layout_constraintStart_toEndOf="@+id/cvItemUser"
+        app:layout_constraintTop_toBottomOf="@+id/tvCompany" />
+
+    <TextView
+        android:id="@+id/tvEmailItemUser"
+        style="@style/TextStyleLight"
+        android:text="@string/txt_email"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLocationItemUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintStart_toEndOf="@+id/tvLocationItemUser"
+        app:layout_constraintTop_toTopOf="@+id/tvLocationItemUser"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/viewItemUser"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="@dimen/_30dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_30dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/grey_300"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLocationItemUser" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
