@@ -2,53 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/backgroundLight"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.home.MainActivity">
-
-    <FrameLayout
-        android:id="@+id/flSearchView"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_150dp"
-        android:background="@drawable/background_top_main"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.appcompat.widget.SearchView
-            android:id="@+id/etSearch"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="@dimen/_20dp"
-            android:layout_marginEnd="@dimen/_20dp"
-            android:layout_marginBottom="@dimen/_20dp"
-            android:autofillHints="Search User"
-            android:background="@drawable/shape_retangle_search"
-            android:inputType="textPersonName"
-            android:paddingStart="5dp"
-            android:focusableInTouchMode="true"
-            android:paddingEnd="5dp"
-            android:focusable="true"
-            android:theme="@style/SearchViewStyle"
-            app:iconifiedByDefault="false"
-            app:queryBackground="@null"
-            app:queryHint="@string/search_user"
-            app:searchIcon="@drawable/ic_baseline_search_24" />
-    </FrameLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvMain"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="@dimen/_100dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/item_user" />
+    tools:context=".presentation.detail.following.FollowingFragment">
 
     <LinearLayout
-        android:id="@+id/llMainNotFound"
+        android:id="@+id/llFollowing"
         android:layout_width="@dimen/_100dp"
         android:layout_height="@dimen/_100dp"
         android:orientation="vertical"
@@ -75,7 +34,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/llMainError"
+        android:id="@+id/llFollowingError"
         android:layout_width="@dimen/_100dp"
         android:layout_height="@dimen/_100dp"
         android:orientation="vertical"
@@ -101,15 +60,32 @@
             android:text="@string/text_error" />
     </LinearLayout>
 
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFollowing"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:listitem="@layout/item_user" />
+
     <ProgressBar
-        android:id="@+id/pbMain"
+        android:id="@+id/pbFollowers"
         style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/rvFollowing" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,14 +4,23 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.15925925925925927" />
+        <entry key="app/src/main/res/drawable/background_main.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/background_search.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/color_cursor.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.15925925925925927" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.15925925925925927" />
         <entry key="app/src/main/res/drawable/shape_retangle_search.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.13125" />
+        <entry key="app/src/main/res/layout/activity_favorite.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_follower.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_following.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item_repository.xml" value="0.28695652173913044" />
         <entry key="app/src/main/res/layout/item_user.xml" value="0.335" />
+        <entry key="app/src/main/res/menu/language.xml" value="0.25" />
+        <entry key="app/src/main/res/menu/main_menu.xml" value="0.1" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.12407407407407407" />
       </map>
     </option>
   </component>

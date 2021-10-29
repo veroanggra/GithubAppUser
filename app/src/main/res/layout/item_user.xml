@@ -19,6 +19,7 @@
 
     <TextView
         android:id="@+id/tvNameItemUser"
+        style="@style/textLight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -29,10 +30,13 @@
         app:layout_constraintTop_toTopOf="@+id/cvItemUser" />
 
     <TextView
-        android:id="@+id/tvUsernameItemUser"
-        style="@style/TextStyleLight"
+        android:id="@+id/tvTypeItemUser"
+        style="@style/textLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="@string/txt_username"
+        android:text="@string/user"
+        android:textSize="@dimen/_10sp"
         app:layout_constraintBottom_toBottomOf="@+id/tvNameItemUser"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.036"
@@ -40,38 +44,19 @@
         app:layout_constraintTop_toTopOf="@+id/tvNameItemUser"
         app:layout_constraintVertical_bias="0.75" />
 
+
     <TextView
-        android:id="@+id/tvCompany"
+        android:id="@+id/tvRepoLinkItemUser"
+        style="@style/textLight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:text="@string/txt_company"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/cvItemUser"
-        app:layout_constraintTop_toBottomOf="@+id/tvNameItemUser" />
-
-    <TextView
-        android:id="@+id/tvLocationItemUser"
-        style="@style/TextStyleLight"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="6dp"
-        android:text="@string/txt_location"
+        android:text="@string/repolink"
+        android:textSize="@dimen/_10sp"
         app:layout_constraintBottom_toTopOf="@id/viewItemUser"
         app:layout_constraintStart_toEndOf="@+id/cvItemUser"
-        app:layout_constraintTop_toBottomOf="@+id/tvCompany" />
-
-    <TextView
-        android:id="@+id/tvEmailItemUser"
-        style="@style/TextStyleLight"
-        android:text="@string/txt_email"
-        app:layout_constraintBottom_toBottomOf="@+id/tvLocationItemUser"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.302"
-        app:layout_constraintStart_toEndOf="@+id/tvLocationItemUser"
-        app:layout_constraintTop_toTopOf="@+id/tvLocationItemUser"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/tvNameItemUser" />
 
     <View
         android:id="@+id/viewItemUser"
@@ -85,7 +70,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvLocationItemUser" />
+        app:layout_constraintTop_toBottomOf="@id/tvRepoLinkItemUser" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

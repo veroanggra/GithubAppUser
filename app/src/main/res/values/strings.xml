@@ -21,5 +21,17 @@
     <string name="desc_repository_dummy">android trinity is tiny proactive framework with much of the scaffolding code required to start a new Android Application</string>
     <string name="star_dummy">55</string>
     <string name="update_dummy">Updated 15 hours ago</string>
+    <string name="txt_content_image_splash">Imageview Splash Activity</string>
+    <string name="txt_title_github">Github</string>
+    <string name="repolink">Repolink</string>
+    <string name="user">User</string>
+    <string name="txt_favorites">Favorites</string>
+    <string name="change_language_settings">Change Language</string>
+    <string name="change_mode">Change Mode</string>
+    <string name="no_available">No Available</string>
+    <string name="tv_not_found">Data Not Found</string>
+    <string name="text_error">Sorry an Error Occurred</string>
+    <string name="favorite_users">Favorites</string>
+
 
 </resources>

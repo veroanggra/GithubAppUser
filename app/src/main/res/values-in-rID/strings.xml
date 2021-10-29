@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GithubApp</string>
+    <string name="search_user">Cari Pengguna</string>
+    <string name="image_user">Gambar Pengguna</string>
+    <string name="txt_name">Nama</string>
+    <string name="txt_username">\@namapengguna</string>
+    <string name="txt_company">Perusahaan</string>
+    <string name="txt_location">Lokasi</string>
+    <string name="txt_email">Email</string>
+    <string name="name_dummy">Wang Guan</string>
+    <string name="username_dummy">wangguan</string>
+    <string name="company_dummy">Director of Mihyo Company, Director of Mobile @mihoyo. DevRel. Engineering</string>
+    <string name="dummy_follower">12K</string>
+    <string name="txt_followers">Pengikut</string>
+    <string name="image_view">Gambar</string>
+    <string name="following_dummy">120</string>
+    <string name="txt_following">Mengikuti</string>
+    <string name="location_dummy">Taipe, Taiwan</string>
+    <string name="email_dummy">washi@miyoho.com</string>
+    <string name="repository_dummy">android-trinity</string>
+    <string name="desc_repository_dummy">android trinity is tiny proactive framework with much of the scaffolding code required to start a new Android Application</string>
+    <string name="star_dummy">55</string>
+    <string name="update_dummy">Diupdate 15 jam lalu</string>
+    <string name="txt_content_image_splash">Gambar Splash</string>
+    <string name="txt_title_github">Github</string>
+    <string name="repolink">Repolink</string>
+    <string name="user">Pengguna</string>
+    <string name="txt_favorites">Favorit</string>
+    <string name="change_language_settings">Ubah Bahasa</string>
+    <string name="change_mode">Ubah Mode</string>
+    <string name="no_available">Tidak Tersedia</string>
+    <string name="tv_not_found">Data Tidak Ditemukan</string>
+    <string name="text_error">Sorry an Error Occurred</string>
+    <string name="favorite_users">Favorit</string>
+
+
+
+</resources>

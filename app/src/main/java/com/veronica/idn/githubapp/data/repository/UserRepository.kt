@@ -46,4 +46,25 @@ class UserRepository @Inject constructor(private val api: ApiService) {
             }
         }.flowOn(Dispatchers.IO)
     }
+
+    suspend fun getFollowers(username: String): Flow<ApiResult<List<User?>?>> {
+        return flow {
+            try {
+                val data = api.getFollowers(username)
+                emit(ApiResult.Success(data))
+            } catch (e: Throwable) {
+                emit(ApiResult.Error(e))
+            }
+        }
+    }
+    suspend fun getFollowing(username: String): Flow<ApiResult<List<User?>?>> {
+        return flow {
+            try {
+                val data = api.getFollowing(username)
+                emit(ApiResult.Success(data))
+            } catch (e: Throwable) {
+                emit(ApiResult.Error(e))
+            }
+        }
+    }
 }

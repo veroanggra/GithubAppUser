@@ -26,6 +26,12 @@ data class DetailUser(
     @ColumnInfo(name = "location")
     @field:SerializedName("location")
     var location: String?,
+    @ColumnInfo(name = "bio")
+    @field:SerializedName("bio")
+    var bio: String?,
+    @ColumnInfo(name = "email")
+    @field:SerializedName("email")
+    var email: String?,
     @ColumnInfo(name = "public_repos")
     @field:SerializedName("public_repos")
     var public_repos: Int?,

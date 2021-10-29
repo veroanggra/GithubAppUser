@@ -12,4 +12,10 @@ data class User(
 
     @field:SerializedName("avatar_url")
     var avatar_url: String,
+
+    @field:SerializedName("html_url")
+    var html_url: String,
+
+    @field:SerializedName("type")
+    var type: String,
 ) : Parcelable
